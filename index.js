@@ -7,7 +7,7 @@ function initElement() {
   lowRiskLabel = document.getElementById('lowRisk');
   modRiskLabel = document.getElementById('moderateRisk');
 
-  var cells = document.getElementsByClassName('cell');
+  var cells = document.getElementsByClassName("cell");
 
   for(let item of cells) {
     item.addEventListener("click", function() {
@@ -21,10 +21,11 @@ function initElement() {
         calculateRisk(selectedCells);
     });
   }
-   
-  /*for (var i = 0; i < cells.length; i++) {	      
-	var item = cells[i];
-    item.addEventListener("click", function(item) {				
+  /*
+  for(var i = 0; i < cells.length; i++) {
+    var item = cells[i];
+    console.log(item.id);
+    item.addEventListener("click", function() {
         if(selectedCells.includes(item.id)) {
             selectedCells.splice(selectedCells.indexOf(item.id), 1);
             removeCellHighlight(item);  
@@ -34,9 +35,8 @@ function initElement() {
         } 
         calculateRisk(selectedCells);
     });
-  }
-}*/
- 
+  }*/
+}
 
 function highlightCell(element) {
   element.style.backgroundColor = cellBackground;
