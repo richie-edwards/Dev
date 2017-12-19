@@ -9,7 +9,7 @@ function initElement() {
 
   var cells = document.getElementsByClassName('cell');
 
-  /*for(let item of cells) {
+  for(let item of cells) {
     item.addEventListener("click", function() {
         if(selectedCells.includes(item.id)) {
             selectedCells.splice(selectedCells.indexOf(item.id), 1);
@@ -20,9 +20,9 @@ function initElement() {
         } 
         calculateRisk(selectedCells);
     });
-  }*/
+  }
    
-  for (var i = 0; i < cells.length; i++) {	      
+  /*for (var i = 0; i < cells.length; i++) {	      
 	var item = cells[i];
     item.addEventListener("click", function(item) {				
         if(selectedCells.includes(item.id)) {
@@ -35,7 +35,7 @@ function initElement() {
         calculateRisk(selectedCells);
     });
   }
-}
+}*/
  
 
 function highlightCell(element) {
