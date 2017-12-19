@@ -1,0 +1,51 @@
+
+
+.grid {
+  display: table;
+  border-collapse:separate;
+  border-spacing:5px;
+  width: 80%;
+}
+
+.header {
+  display: table-cell;
+  background-color: #EEE;
+  font-weight: bold;
+  text-align: center;
+  border: solid;
+  border-width: thin;
+}
+
+.row {
+  display: table-row;
+}
+
+.label {
+  font-weight: bold;
+  display: table-cell;
+  background-color: #EEE;
+  border: solid;
+  border-width: thin;
+  width:5%;
+}
+
+.cell { 
+  display: table-cell;
+  padding: 5px;
+  border: solid;
+  border-color: black;
+  border-width: thin;
+  width: 25%
+}
+
+.highlightedCell {
+  background-color: lightblue;
+}
+
+.cell:hover { 
+  border-color: lightblue;
+}
+
+.selected {
+  background-color: yellow;
+}

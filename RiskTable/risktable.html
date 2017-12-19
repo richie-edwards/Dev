@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Risk Table Sandbox</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="initElement();">
+    <script src="risktable.js"></script>
+    <h1>Risk Table</h1>
+    <h3>Select the appropriate risk by click on the cell(s)</h3>
+    
+    <div class="grid">
+      <div class="row">
+        <div></div>
+        <div class="header">Presenting Problems(s)</div>
+        <div class="header">Diagnosistic Procedure(s) Ordered</div>
+        <div class="header">Management Options Selected</div>
+      </div>
+      <div class="minimal row">
+        <div id="minimalRisk" class="label col-1">Minimal</div>
+        <div id="problems-minimal" class="cell" risk="minimal">
+          <p>• One self-limited or minor problem (for example, cold, insect bite, tinea corpori)</p>
+        </div>
+        <div id="procedures-minimal" class="cell" risk="minimal">
+          <p>
+            • Laboratory tests requirin venipuncture<br>
+            • Chest x-rays<br>
+            • EKG/EEG<br>
+            • Urinalysis<br>
+            • Ultrasound (for example, echocardiography)<br>
+            • KOH prep
+          </p>
+        </div>
+        <div id="options-minimal" class="cell" risk="minimal">
+          <p> 
+            • Rest<br>
+            • Gargles<br>
+            • Elastic bandages<br>
+            • Superficial dressings
+          </p>
+        </div>
+      </div>
+      <div class="low row">
+        <div id="lowRisk" class="label col-2">Low</div>
+        <div id="problems-low" class="cell" risk="low">
+          <p> 
+            • Two or more self-limited or minor problems<br>
+            • One stable chronic illness (for example, well controlled hypertension, non-insulin dependent diabetes, cataract, BPH)<br>
+            • Acute uncomplicated illness or injury (for example, cystitis, allergic rhinitis, simple sprain)
+          </p>
+        </div>
+        <div id="procedures-low" class="cell" risk="low">
+          <p> 
+            • Physiologic tests not under stress (for example, pulmonary function tests)<br>
+            • Non-cardiovascular imaging studies with contrast (for example, barium enema)<br>
+            • Superficial needle biopsies<br>
+            • Clinical laboratory tests requiring arterial puncture<br>
+            • Skin biopsies
+          </p>
+        </div>
+        <div id="options-low" class="cell" risk="low">
+          <p> 
+            • Over-the-counter drugs<br>
+            • Minor surgery with no identified risk factors<br>
+            • Physical therapy<br>
+            • Occupational therapy<br>
+            • IV fluids without additives
+          </p>
+        </div>
+      </div>
+      <div class="moderate row">
+        <div id="moderateRisk" class="label col-2">Moderate</div>
+        <div id="problems-moderate" class="cell" risk="moderate">
+          <p> 
+            • One or more chronic illnesses with mild exacerbation, progression, or side effects of treatment<br>
+            • Two or more stable chronic illnesses<br>
+            • Undiagnosed new problem with uncertain prognosis (for example, lump in breast)<br>
+            • Acute illness with systemic symptoms (for example, pyelonephritis, pneumonitis, colitis)<br>
+            • Acute complicated injury (for example, head injury with brief loss of consciousness)
+          </p>
+        </div>
+        <div id="procedures-moderate" class="cell" risk="moderate">
+          <p> 
+            • Physiologic tests under stress (for example, cardiac stress test, fetal contraction stress test)<br>
+            • Diagnostic endoscopies with no identified risk factors<br>
+            • Deep needle or incisionalbiopsy<br>
+            • Cardiovascular imaging studies with contrast and no identified risk factors (for example, arteriogram, cardiac catheterization)<br>
+            • Obtain fluid from body cavity (for example, lumbar puncture, thoracentesis, culdocentesis)
+          </p>
+        </div>
+        <div id="options-moderate" class="cell" risk="moderate">
+          <p> 
+            • Minor surgery with identified risk factors<br>
+            • Elective major surgery (open, percutaneous or endoscopic) with no identified risk factors<br>
+            • Prescription drug management<br>
+            • Therapeutic nuclear medicine<br>
+            • IV fluids with additives<br>
+            • Closed treatment of fracture or dislocation without manipulation<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
